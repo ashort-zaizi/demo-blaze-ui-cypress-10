@@ -7,6 +7,7 @@ File:-
 node_modules/cypress-cucumber-preprocessor/lib/stepDefinitionPath.js
 
 Make this change to this line:-
+
 confStepDefinitions || `cypress${path.sep}integration`;
         
 Change to:-     
