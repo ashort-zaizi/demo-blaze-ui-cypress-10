@@ -1,13 +1,13 @@
 /// <reference types="Cypress" />
 
-import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then, And } from '@badeball/cypress-cucumber-preprocessor';
 import HomePage from '../../pageObjects/HomePage';
 
 const homePage = new HomePage();
 
 
 Given('I am on the DemoBlaze website home page', () => {
-    cy.visit(Cypress.env('demoBlazeUrl'));
+    cy.visit(Cypress.config('baseUrl'));
 })
 
 When('I click on the Monitors filter button', function() {
